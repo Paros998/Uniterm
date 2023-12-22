@@ -3,9 +3,9 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     Title="AddUniterm" Height="158" Width="300" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" ShowInTaskbar="False">
     <Grid>
-        <Label Height="28" Margin="9,15,0,0" Name="label1" VerticalAlignment="Top" HorizontalAlignment="Left" Width="74">Wyrażenie A</Label>
-        <Label Height="28" Margin="9,41,0,0" Name="label2" VerticalAlignment="Top" HorizontalAlignment="Left" Width="74">Wyrażenie B</Label>
-        <Label Height="28" Margin="28,72,0,0" Name="label3" VerticalAlignment="Top" HorizontalAlignment="Left" Width="74">Operacja</Label>
+        <Label Height="28" Margin="9,15,0,0" Name="label1" VerticalAlignment="Top" HorizontalAlignment="Left" Width="76">Wyrażenie A</Label>
+        <Label Height="28" Margin="9,41,0,0" Name="label2" VerticalAlignment="Top" HorizontalAlignment="Left" Width="76">Wyrażenie B</Label>
+        <Label Height="28" Margin="28,72,0,0" Name="label3" VerticalAlignment="Top" HorizontalAlignment="Left" Width="76">Operacja</Label>
         <TextBox Height="23" Margin="100,17,58,0" Name="tbA" VerticalAlignment="Top" />
         <TextBox Height="23" Margin="100,46,58,0" Name="tbB" VerticalAlignment="Top" />
         <RadioButton Height="16" Margin="100,0,0,27" Name="rbSr" IsChecked="True" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="31">;</RadioButton>

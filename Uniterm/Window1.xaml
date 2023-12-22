@@ -27,7 +27,7 @@
         <ComboBox Height="23" Name="cbFonts" Width="120" SelectionChanged="ehCBFontsChanged"  HorizontalAlignment="Right" Margin="0,0,10,108" VerticalAlignment="Bottom" Grid.Column="1" />
         <Button Height="23" Width="99" Click="Button_Click"  HorizontalAlignment="Right" Margin="0,22,10,0" VerticalAlignment="Top" Name="btnAddSek" Grid.Column="1">Sequencing</Button>
         <Label Height="28" HorizontalAlignment="Right" Margin="0,0,71,72" Name="label1" VerticalAlignment="Bottom" Width="59" Grid.Column="1">Size</Label>
-        <Label HorizontalAlignment="Right" Margin="0,106,63,131" Name="label2" Width="67" Grid.Column="1">Type</Label>
+        <Label HorizontalAlignment="Right" Margin="0,106,63,131" Name="label2" Width="67" Grid.Column="1">Font</Label>
         <Button Height="23" HorizontalAlignment="Right" Margin="0,65,10,0" Name="btnAddEl" VerticalAlignment="Top" Width="96" Click="btnAddEl_Click" Grid.Column="1">Elimination</Button>
         <Button Height="23" HorizontalAlignment="Right" Margin="0,0,10,29" Name="btnRedraw" VerticalAlignment="Bottom" Width="89" Click="btnRedraw_Click" Grid.Column="1">Redraw</Button>
         <ListBox HorizontalAlignment="Left" Margin="0,30,0,35" Name="lbUniterms" Width="127" Grid.RowSpan="2" BorderThickness="3" SelectionChanged="ehlbUNitermsSelectionChanged" />
