@@ -1,0 +1,50 @@
+﻿<Window x:Class="Uniterm.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:Uniterm"
+    Title="Uniterm" Height="586" Width="942" WindowStyle="SingleBorderWindow" 
+        Visibility="Visible" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+    
+    <Grid ClipToBounds="True">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="647*" />
+            <ColumnDefinition Width="273*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="265*" />
+            <RowDefinition Height="283*" />
+        </Grid.RowDefinitions>
+        <Menu Height="22" Name="menu1" VerticalAlignment="Top" Grid.ColumnSpan="2" HorizontalAlignment="Right" Width="936">
+            <MenuItem Header="File" Margin="15, 0, 0, 0">
+                <MenuItem Header="Новий" Click="ehNowyClick"></MenuItem>
+                <MenuItem Header="Замінити" Click="MenuItem_Click"></MenuItem>
+                <MenuItem Header="Записати" Click="MenuItem_Click_1"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <Button HorizontalAlignment="Right" Margin="0,250,10,275" Name="btnAdd" Width="75" Click="btnAdd_Click" Grid.RowSpan="2" Grid.Column="1">Clean up</Button>
+
+        <ComboBox Height="23" Name="cbfSize" Width="50" SelectionChanged="ehcbfSizeChanged"  HorizontalAlignment="Right" Margin="0,0,10,77" VerticalAlignment="Bottom" Grid.Column="1" />
+        <ComboBox Height="23" Name="cbFonts" Width="120" SelectionChanged="ehCBFontsChanged"  HorizontalAlignment="Right" Margin="0,0,10,108" VerticalAlignment="Bottom" Grid.Column="1" />
+        <Button Height="23" Width="99" Click="Button_Click"  HorizontalAlignment="Right" Margin="0,22,10,0" VerticalAlignment="Top" Name="btnAddSek" Grid.Column="1">Sequencing</Button>
+        <Label Height="28" HorizontalAlignment="Right" Margin="0,0,71,72" Name="label1" VerticalAlignment="Bottom" Width="59" Grid.Column="1">Size</Label>
+        <Label HorizontalAlignment="Right" Margin="0,106,63,131" Name="label2" Width="67" Grid.Column="1">Type</Label>
+        <Button Height="23" HorizontalAlignment="Right" Margin="0,65,10,0" Name="btnAddEl" VerticalAlignment="Top" Width="96" Click="btnAddEl_Click" Grid.Column="1">Elimination</Button>
+        <Button Height="23" HorizontalAlignment="Right" Margin="0,0,10,29" Name="btnRedraw" VerticalAlignment="Bottom" Width="89" Click="btnRedraw_Click" Grid.Column="1">Redraw</Button>
+        <ListBox HorizontalAlignment="Left" Margin="0,30,0,35" Name="lbUniterms" Width="127" Grid.RowSpan="2" BorderThickness="3" SelectionChanged="ehlbUNitermsSelectionChanged" />
+        <TextBox Grid.Row="1" HorizontalAlignment="Left" Margin="45,0,0,11" Name="tbName" Width="120" Height="19.385" VerticalAlignment="Bottom" />
+        <TextBox Grid.Row="1" Margin="218,0,146,11" Name="tbDescription" KeyUp="tbDescKeyUP" Height="19.385" VerticalAlignment="Bottom" Grid.ColumnSpan="2" />
+        <Label Grid.Row="1" HorizontalAlignment="Left" Margin="0,0,0,6" Name="label3" Width="47" Height="24.385" VerticalAlignment="Bottom">Name</Label>
+        <Label Grid.Row="1" HorizontalAlignment="Left" Margin="171,0,0,6" Name="label4" Width="38" Height="24.385" VerticalAlignment="Bottom">Desc</Label>
+        <Border BorderThickness="1" BorderBrush="CadetBlue" Margin="128,30,132,35" Grid.RowSpan="2" Grid.ColumnSpan="2">
+            <DockPanel Name="pic"  Grid.RowSpan="2" ClipToBounds="True">
+                <ScrollBar ValueChanged="HorScroll_ValueChanged" Name="HorScroll" Orientation="Horizontal" DockPanel.Dock="Bottom"  Maximum="{Binding ElementName=cDrawing, Path=ActualWidth}" SmallChange="1" Width="640" HorizontalAlignment="Left" />
+                <ScrollBar ValueChanged="HorScroll_ValueChanged" Name="VerScroll" DockPanel.Dock="Right" Maximum="{Binding ElementName=cDrawing, Path=ActualHeight}" Minimum="0" Height="458" />
+
+                <Border ClipToBounds="True">
+                    <local:MyCanvas x:Name="cDrawing" MouseLeftButtonDown="ehMouseDown" Background="White" ClipToBounds="True" Grid.RowSpan="2"></local:MyCanvas>
+                </Border>
+            </DockPanel>
+        </Border>
+    </Grid>
+
+</Window>
