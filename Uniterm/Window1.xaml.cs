@@ -128,14 +128,13 @@ namespace Uniterm
             AddElem ae = new AddElem();
 
             ae.ShowDialog();
-            if (ae.tbA.Text.Length > 250 || ae.tbB.Text.Length > 250 || ae.tbC.Text.Length > 250)
+            if (ae.tbA.Text.Length > 250 || ae.tbB.Text.Length > 250)
             {
                 MessageBox.Show("Zbyt długi tekst!\n Maksymalna długość tekstu to 250 znaków!", "Błąd", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
             MyDrawing.eA = ae.tbA.Text;
             MyDrawing.eB = ae.tbB.Text;
-            MyDrawing.eC = ae.tbC.Text;
 
             btnRedraw_Click(sender, e);
             modified = true;

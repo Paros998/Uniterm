@@ -16,9 +16,9 @@
         </Grid.RowDefinitions>
         <Menu Height="22" Name="menu1" VerticalAlignment="Top" Grid.ColumnSpan="2" HorizontalAlignment="Right" Width="936">
             <MenuItem Header="File" Margin="15, 0, 0, 0">
-                <MenuItem Header="Новий" Click="ehNowyClick"></MenuItem>
-                <MenuItem Header="Замінити" Click="MenuItem_Click"></MenuItem>
-                <MenuItem Header="Записати" Click="MenuItem_Click_1"></MenuItem>
+                <MenuItem Header="New" Click="ehNowyClick"></MenuItem>
+                <MenuItem Header="Replace" Click="MenuItem_Click"></MenuItem>
+                <MenuItem Header="Save" Click="MenuItem_Click_1"></MenuItem>
             </MenuItem>
         </Menu>
         <Button HorizontalAlignment="Right" Margin="0,250,10,275" Name="btnAdd" Width="75" Click="btnAdd_Click" Grid.RowSpan="2" Grid.Column="1">Clean up</Button>
