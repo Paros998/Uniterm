@@ -110,19 +110,6 @@ namespace Uniterm
             DrawVert(pt, (int)l);
         }
 
-        public void DrawElimHor(Point pt)
-        {
-            if (eA == "" || eB == "") return;
-
-            Point p2 = new Point(pt.X, pt.Y + 2);
-            string text = sA + sOp + sB;
-
-            double l = GetTextLength(text) + 2;
-
-            DrawText(p2, text);
-            DrawVert(pt, (int)l);
-        }
-
         public void DrawSwitched(Point pt)
         {
             if (sA == "" || sB == "" || sOp == "" || eA == "" || eB == "" ) return;
