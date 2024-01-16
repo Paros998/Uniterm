@@ -4,8 +4,8 @@
     Title="AddElem" Height="170" Width="308" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
     <Grid Width="291" Height="141">
 
-        <Label Height="28" HorizontalAlignment="Left" Margin="10,12,0,0" Name="label1" VerticalAlignment="Top" Width="74">Wyrażenie A</Label>
-        <Label HorizontalAlignment="Left" Margin="10,39,0,65" Name="label2" Width="74">Wyrażenie B</Label>
+        <Label Height="28" HorizontalAlignment="Left" Margin="10,12,0,0" Name="label1" VerticalAlignment="Top" Width="76">Wyrażenie A</Label>
+        <Label HorizontalAlignment="Left" Margin="10,39,0,65" Name="label2" Width="76">Wyrażenie B</Label>
         <TextBox Height="23" Margin="100,12,11,0" Name="tbA" VerticalAlignment="Top" />
         <TextBox Height="23" Margin="100,41,11,0" Name="tbB" VerticalAlignment="Top" />
         <Button Height="23" Margin="0,107,11,0" Name="btnAdd" VerticalAlignment="Top" Grid.Column="1" HorizontalAlignment="Right" Width="75" Click="btnAdd_Click">Add</Button>
